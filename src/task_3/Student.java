@@ -26,10 +26,6 @@ public class Student {
         this.courseAndGrades = coursesAndGrades;
     }
 
-    void totalNumberofStudents(int totalNumberofStudents) {
-        this.totalNumOfStudents = totalNumberofStudents;
-    }
-
     String getName() {
         return this.name;
     }
