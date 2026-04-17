@@ -1,6 +1,5 @@
 package task_3;
 
-import java.rmi.StubNotFoundException;
 import java.util.HashMap;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -28,26 +27,20 @@ public class Main {
         coursesNGradesEmily.put("English", 78.9);
         coursesNGradesEmily.put("Math", 94.5);
 
-        student1.setcoursesNGrades(coursesNGradesJohn);
-        student2.setcoursesNGrades(coursesNGradesEmily);
+        student1.setCourseAndGrades(coursesNGradesJohn);
+        student2.setCourseAndGrades(coursesNGradesEmily);
 
-        System.out.println(student1.getCoursesNGrades());
-        System.out.println(student2.getCoursesNGrades());
-
-        System.out.println(student1.getGrade("English"));
+        System.out.println(student1.getCoursesandGrades());
+        System.out.println(student2.getCoursesandGrades());
 
         System.out.println();
         System.out.println();
 
-        System.out.println("TESTING COURSESNGRADES PRINT FUNCTION");
+        System.out.println("TESTING COURSEANDGRADES PRINT FUNCTION");
 
-        student1.printCoursesNGrades();
-        student2.printCoursesNGrades();
+        student1.printCoursesAndGrades();
+        student2.printCoursesAndGrades();
 
         System.out.println();
-
-        System.out.println("TESTING GPA FUNCTION");
-        System.out.println(student1.getGPA());
-        System.out.println(student2.getGPA());
     }
 }
