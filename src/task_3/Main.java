@@ -13,7 +13,10 @@ public class Main {
         student1.setName("John");
         student2.setName("Emily");
 
-        System.out.println("TESTING CONSTRUCTORS, GETTERES, AND SETTERS");
+        System.out.println("TESTING CONSTRUCTORS, GETTERES, AND SETTERS\n");
+
+        System.out.println("TOTAL NUMBER OF STUDENTS");
+        System.err.println(Student.getTotalNumberOfStudents());
 
         System.out.println(student1.getName());
         System.out.println(student2.getName());
