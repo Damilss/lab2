@@ -3,10 +3,14 @@ package task_3;
 import java.util.HashMap;
 
 public class Student {
+    //class variables
     static int totalNumOfStudents = 0;
-    String name;
-    HashMap<String, Double> courseAndGrades = new HashMap<>();
 
+    //object variables
+    private String name;
+    private HashMap<String, Double> courseAndGrades = new HashMap<>();
+
+    //constructors
     Student(){totalNumOfStudents++;}
 
     Student(String stName){
@@ -17,7 +21,7 @@ public class Student {
         this.name = stName;
         this.courseAndGrades = courseAndGrades;
     }
-
+    //set methods
     void setName(String studentName) {
         this.name = studentName;
     }
@@ -37,7 +41,7 @@ public class Student {
     HashMap<String, Double> getCoursesandGrades() {
         return this.courseAndGrades;
     }
-
+    //get methods
     int getTotalNumberOfStudents() {
         return totalNumOfStudents;
     }
