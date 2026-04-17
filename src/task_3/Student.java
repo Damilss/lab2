@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class Student {
     //class variables
-    static int totalNumOfStudents = 0;
+    private static int totalNumOfStudents = 0;
 
     //object variables
     private String name;
@@ -12,10 +12,6 @@ public class Student {
 
     //constructors
     Student(){totalNumOfStudents++;}
-
-    Student(String stName){
-        this.name = stName;
-    }
 
     Student(String stName, HashMap<String, Double> courseAndGrades) {
         this.name = stName;
@@ -42,7 +38,7 @@ public class Student {
         return this.courseAndGrades;
     }
     //get methods
-    int getTotalNumberOfStudents() {
+    static int getTotalNumberOfStudents() {
         return totalNumOfStudents;
     }
 
